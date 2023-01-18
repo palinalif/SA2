@@ -1,6 +1,16 @@
 /* Here below you should make your changes */
 @keyframes static {
     /* Insert your changes */
+    
+    /* Frame 1 Gradient: Black - Dark blue - Red - Magenta - Green - Cyan - Yellow */
+    0% {
+        background-image: linear-gradient(to left, red, Yellow);
+        background-position: top 50px;
+    }
+    /* Frame 2 Gradient (50%): Same as above but backwards*/
+    100% {
+        background-image: linear-gradient(to right,red, yellow);
+    }
 }
 
 @keyframes level-1 {
@@ -21,6 +31,10 @@
 
 .static {
     /* Insert your changes */
+    animation-name: static;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
 }
 
 .move-cartridge {
@@ -31,6 +45,8 @@
     height: 350px;
     width: 500px;
     margin: 0 auto;
+    background-image: url('resources/tv.png');
+    background-size: contain;
 }
 
 #nes-console {
