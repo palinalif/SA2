@@ -59,7 +59,7 @@
 .static {
     /* Insert your changes */
     animation-name: static;
-    animation-duration: 2s;
+    animation-duration: 20s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
 }
@@ -67,7 +67,7 @@
 .move-cartridge {
     /* Insert your changes */
     animation-name: move-cartridge;
-    animation-duration: 20s;
+    animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
