@@ -1,32 +1,59 @@
 /* Here below you should make your changes */
 @keyframes static {
     /* Insert your changes */
-    
     /* Frame 1 Gradient: Black - Dark blue - Red - Magenta - Green - Cyan - Yellow */
     0% {
-        background-image: linear-gradient(to left, red, Yellow);
-        background-position: top 50px;
+        background-image: url('resources/tv.png'),
+        linear-gradient(to left, #000000 0%, #000000 14.2%, #0f0da9 14.2%,#0f0da9 28.4%, #9a1018 28.4%, #9a1018 42.6%, #9d12ac 42.6%, #9d12ac 56.8%, #54c735 56.8%,#54c735 71%, #53c0b5 71%, #53c0b5 85.2%, #b7bf3a 85.2%);
+        background-position: 0 0, 70px 10px;
+        background-size: contain, 300px 300px;
     }
     /* Frame 2 Gradient (50%): Same as above but backwards*/
     100% {
-        background-image: linear-gradient(to right,red, yellow);
+        background-image: url('resources/tv.png'),
+        linear-gradient(to right, #000000 0%, #000000 14.2%, #0f0da9 14.2%,#0f0da9 28.4%, #9a1018 28.4%, #9a1018 42.6%, #9d12ac 42.6%, #9d12ac 56.8%, #54c735 56.8%,#54c735 71%, #53c0b5 71%, #53c0b5 85.2%, #b7bf3a 85.2%);
+        background-position: 0 0, 70px 10px;
+        background-size: contain, 300px 300px;
     }
 }
 
 @keyframes level-1 {
     /* Insert your changes */
+    0% {
+        background-image: url('resources/tv.png'), url('resources/stage1.png');
+        background-size: contain, cover ;
+        background-position: 0 0, 0px 30px;
+        background-repeat: no-repeat, no-repeat;
+    }
+    100% {
+        background-image: url('resources/tv.png'), url('resources/stage1.png');
+        background-size: contain, cover;
+        background-position: 0 0, -4400px 30px;
+        background-repeat: no-repeat, no-repeat;
+
+    }
 }
 
 @keyframes move-cartridge {
     /* Insert your changes */
+    0% {}
+    100% {}
 }
 
 .intro {
     /* Insert your changes */
+    background-image: url('resources/tv.png'), url('resources/intro.png');
+    background-size: contain, 380px 260px;
+    background-position: 0 0, 20px 30px;
 }
 
 .level-1 {
     /* Insert your changes */
+    animation-name: level-1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 
 .static {
@@ -39,14 +66,21 @@
 
 .move-cartridge {
     /* Insert your changes */
+    animation-name: move-cartridge;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    background-image: url('resources/contra-cartridge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #television {
     height: 350px;
     width: 500px;
     margin: 0 auto;
-    background-image: url('resources/tv.png');
-    background-size: contain;
+    background-repeat: no-repeat, no-repeat;
 }
 
 #nes-console {
