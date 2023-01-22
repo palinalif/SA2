@@ -8,7 +8,7 @@
         background-position: 0 0, 70px 10px;
         background-size: contain, 300px 300px;
     }
-    /* Frame 2 Gradient (50%): Same as above but backwards*/
+    /* Frame 2 Gradient (100%): Same as above but backwards*/
     100% {
         background-image: url('resources/tv.png'),
         linear-gradient(to right, #000000 0%, #000000 14.2%, #0f0da9 14.2%,#0f0da9 28.4%, #9a1018 28.4%, #9a1018 42.6%, #9d12ac 42.6%, #9d12ac 56.8%, #54c735 56.8%,#54c735 71%, #53c0b5 71%, #53c0b5 85.2%, #b7bf3a 85.2%);
@@ -20,17 +20,10 @@
 @keyframes level-1 {
     /* Insert your changes */
     0% {
-        background-image: url('resources/tv.png'), url('resources/stage1.png');
-        background-size: contain, cover ;
         background-position: 0 0, 0px 30px;
-        background-repeat: no-repeat, no-repeat;
     }
     100% {
-        background-image: url('resources/tv.png'), url('resources/stage1.png');
-        background-size: contain, cover;
         background-position: 0 0, -4400px 30px;
-        background-repeat: no-repeat, no-repeat;
-
     }
 }
 
@@ -60,6 +53,9 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url('resources/tv.png'), url('resources/stage1.png');
+    background-size: contain, cover;
 }
 
 .static {
